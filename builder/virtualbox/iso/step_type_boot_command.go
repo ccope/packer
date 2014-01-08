@@ -119,6 +119,17 @@ func scancodes(message string) []string {
 	special["<return>"] = []string{"1c", "9c"}
 	special["<tab>"] = []string{"0f", "8f"}
 
+        special["<spacebar>"] = []string{"39", "b9"};
+        special["<up>"] = []string{"48", "c8"};
+        special["<down>"] = []string{"50", "d0"};
+        special["<pageUp>"] = []string{"49", "c9"};
+        special["<pageDown>"] = []string{"51", "d1"};
+        special["<end>"] = []string{"4f", "cf"};
+        special["<insert>"] = []string{"52", "d2"};
+        special["<left>"] = []string{"4b", "cb"};
+        special["<right>"] = []string{"4d", "cd"};
+        special["<home>"] = []string{"47", "c7"};
+
 	shiftedChars := "~!@#$%^&*()_+{}|:\"<>?"
 
 	scancodeIndex := make(map[string]uint)
